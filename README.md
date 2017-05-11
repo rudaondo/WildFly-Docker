@@ -6,11 +6,11 @@ This is an Dockerfile with [WildFly application server 10.1.0.Final](http://wild
 
 To build the docker you must launch the following command.
 
-    docker build -t rudaondo/wildfly wildfly-docker
+    docker build -t rudaondo/wildfly 
 	
 Behind the proxy.
 
-    docker build --build-arg HTTP_PROXY=http://user:passwd:user:passwd@ProxyIP:ProxyPort --build-arg HTTPS_PROXY=http://user:passwd:user:passwd@ProxyIP:ProxyPort -t rudaondo/wildfly wildfly-docker
+    docker build --build-arg HTTP_PROXY=http://user:passwd:user:passwd@ProxyIP:ProxyPort --build-arg HTTPS_PROXY=http://user:passwd:user:passwd@ProxyIP:ProxyPort -t rudaondo/wildfly 
 	
 ## Usage
 
@@ -20,7 +20,7 @@ To boot in standalone mode with admin console available remotely
 
 ## Administration Console
 
-Administration console will be available on the port `9990` of the container. The admin user is "wildflyadmin" and the key "wildflypassword"
+Administration console will be available on the port `9990` of the container. The admin user is `wildflyadmin` and the key `wildflypassword`.
 
 ## Application deployment
 
