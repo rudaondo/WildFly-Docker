@@ -18,7 +18,7 @@ RUN cd $HOME \
     && rm wildfly-$WILDFLY_VERSION.tar.gz \
     && chown -R jboss:0 ${JBOSS_HOME} \
     && chmod -R g+rw ${JBOSS_HOME} \
-	&& ${JBOSS_HOME}/bin/add-user.sh tecnocom soyunsuperheroe 
+	&& ${JBOSS_HOME}/bin/add-user.sh wildflyadmin wildflypassword 
 
 # Ensure signals are forwarded to the JVM process correctly for graceful shutdown
 ENV LAUNCH_JBOSS_IN_BACKGROUND true
